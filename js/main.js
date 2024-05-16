@@ -371,7 +371,7 @@ $(function() {
         stagePadding: 0,
         margin: 0,
         smartSpeed: 1500,
-        autoplay: false,
+        autoplay: true,
         dots: false,
         nav: false,
         navText: ['<span class="icon-keyboard_arrow_left">', '<span class="icon-keyboard_arrow_right">']

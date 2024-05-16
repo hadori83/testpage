@@ -213,7 +213,7 @@ a, a:hover {
 }
 
 .untree_co--site-hero, .untree_co--site-hero > .container > .row {
-  height: 100vh;
+  height: 85vh;
   min-height: 500px;
 }
 
@@ -254,6 +254,12 @@ a, a:hover {
 @media (max-width: 991.98px) {
   .untree_co--site-hero .site-hero-contents .hero-heading {
     font-size: 2.5rem;
+  }
+  .untree_co--site-hero, .untree_co--site-hero > .container > .row {
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    min-height: 500px;
   }
 }
 
@@ -686,7 +692,7 @@ a, a:hover {
 
 /* buttons */
 .readmore {
-  color: #554ddc;
+  color: #fff;
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: .2rem;
@@ -702,7 +708,7 @@ a, a:hover {
   left: 0;
   right: 0;
   height: 1px;
-  background: #554ddc;
+  background: #fff;
   bottom: 0;
   width: 0%;
   -webkit-transition: .3s width ease-in-out;
@@ -711,7 +717,7 @@ a, a:hover {
 }
 
 .readmore:hover {
-  color: #000;
+  color: #fff;
 }
 
 .readmore:hover:before {
@@ -2075,4 +2081,16 @@ footer .form-subscribe .form-control:active, footer .form-subscribe .form-contro
 }
 .btn_kakao:hover{color: #333;}
 .btn_kakao img{width: 40px;}
+.bg-point{background: #554ddc;}
+.bg-point p{color: #fff}
+.bg-point h5{color: #fff}
+.bg-point .media-29191-icon span{color: #fff}
+.bg-point2{background: #1ac88f;}
+.bg-point2 p{color: #fff}
+.bg-point2 h5{color: #fff}
+.bg-point2 .media-29191-icon span{color: #fff}
+footer h5{background: #f3f3f3; border-radius: 20px; padding: 5px;}
+footer .noline{background: none; border-radius: 20px; padding: 0;}
+footer h5 span{vertical-align: middle; font-size: 28px;}
+footer a{font-size: 16px; color:#554ddc; font-weight: 700;}
 
