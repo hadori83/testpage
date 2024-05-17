@@ -123,7 +123,7 @@
           <div class="container">
             
             <div class="row custom-row-02192 align-items-stretch">
-              <div class="col-md-8 col-lg-8 mb-5" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-md-8 col-lg-7 mb-5" data-aos="fade-up" data-aos-delay="100">
                 <div class="media-29191 text-center h-100">
                   <div class="media-29191-icon">
                     <span class="material-symbols-outlined">
@@ -145,7 +145,7 @@
                 </div>
               </div>
               
-              <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="200">
+              <div class="col-md-6 col-lg-5 mb-5" data-aos="fade-up" data-aos-delay="200">
                 <div class="media-29191 text-center h-100">
                   <div class="media-29191-icon">
                     <span class="material-symbols-outlined">
@@ -224,24 +224,24 @@
                 <h5 class="mb-3 p-0">감정평가 수수료 계산</h5>
                 <div class="row">
                   <div class="col-md-7">
+                    <form name="form1" method="post" action=""></form>
                     
-                    <form action="#" method="" class="form-subscribe">
                       <h5>예상감정평가액</h5>
                       <div class="form-group d-flex">
-                        <input type="number" class="form-control mr-2" placeholder="예상감정평가액">
-                        <input type="button" value="계산하기" class="btn btn-black px-4 text-white">
+                        <input name="textfield" type="text" id="textfield" class="form-control mr-2" placeholder="예상감정평가액" maxlength="15" onkeyup="Number_Format2(this)">
+                        <input type="button" value="계산하기" class="btn btn-black px-4 text-white" onclick="calc()">
                       </div>
-                    </form>
+                    
                   </div>
                   <div class="col-md-5">
                     
-                    <form action="#" method="" class="form-subscribe">
+                   
                       <h5>예상 수수료</h5>
                       <div class="form-group d-flex mb-1">
-                        <input type="number" class="form-control mr-2" placeholder="수수료">
+                        <input name="textfield2" type="text" id="textfield2" class="form-control mr-2" placeholder="수수료" maxlength="15">
                       </div>
                       <p>(실비/VAT 별도)</p>
-                    </form>
+                   
                     
                   </div>
                 </div>

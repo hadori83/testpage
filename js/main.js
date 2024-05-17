@@ -465,3 +465,45 @@ $(function() {
   owlCarouselPlugin();
 
 });
+
+/* 수수료 계산식 */
+function calc() {
+	var howM1=$("#textfield").val();
+	howM1 = howM1.replace(/,/g, "");
+	var money =0;
+
+	if(howM1 <=50000000)																			money = 200000;
+	else if(howM1 > 50000000			&& howM1 <= 500000000)			money = (howM1 - 50000000) * (11 / 10000) + 200000;
+	else if(howM1 > 500000000		&& howM1 <= 1000000000)		money = (howM1 - 500000000) * (9 / 10000) + 695000;
+	else if(howM1 > 1000000000		&& howM1 <= 5000000000)		money = (howM1 - 1000000000) * (8 / 10000) + 1145000;
+	else if(howM1 > 5000000000		&& howM1 <= 10000000000)		money = (howM1 - 5000000000) * (7 / 10000) + 4345000;
+	else if(howM1 > 10000000000		&& howM1 <= 50000000000)		money = (howM1 - 10000000000) * (6 / 10000) + 7845000;
+	else if(howM1 > 50000000000		&& howM1 <= 100000000000)		money = (howM1 - 50000000000) * (5 / 10000) + 31845000;
+	else if(howM1 > 100000000000	&& howM1 <= 300000000000)		money = (howM1 - 100000000000) * (4 / 10000) + 56845000;
+	else if(howM1 > 300000000000	&& howM1 <= 600000000000)		money = (howM1 - 300000000000) * (3 / 10000) + 136845000;
+	else if(howM1 > 600000000000	&& howM1 <= 1000000000000)	money = (howM1 - 600000000000) * (2 / 10000) + 226845000;
+	else if(howM1 > 1000000000000)														money = (howM1 - 1000000000000) * (1 / 10000) + 306845000;
+
+	money=Number_Format(money.toFixed(0));
+	$("#textfield2").val(money);
+  }
+
+function Number_Format(str){
+	   var Re = /[^0-9]/g;
+	   var ReN = /(-?[0-9]+)([0-9]{3})/;
+	   str = str.replace(Re,'');
+	   while (ReN.test(str)) {
+			  str = str.replace(ReN, "$1,$2");
+	   }
+	   return str;
+}
+function Number_Format2(fn){
+	   var str = fn.value;
+	   var Re = /[^0-9]/g;
+	   var ReN = /(-?[0-9]+)([0-9]{3})/;
+	   str = str.replace(Re,'');
+	   while (ReN.test(str)) {
+			  str = str.replace(ReN, "$1,$2");
+			  }
+	   fn.value = str;
+}

@@ -213,7 +213,9 @@ a, a:hover {
 }
 
 .untree_co--site-hero, .untree_co--site-hero > .container > .row {
-  height: 85vh;
+
+  padding-top: 80px;
+  padding-bottom: 70px;
   min-height: 500px;
 }
 
