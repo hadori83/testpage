@@ -2089,7 +2089,7 @@ footer .form-subscribe .form-control:active, footer .form-subscribe .form-contro
 .bg-point2 p{color: #fff}
 .bg-point2 h5{color: #fff}
 .bg-point2 .media-29191-icon span{color: #fff}
-footer h5{background: #f3f3f3; border-radius: 20px; padding: 5px;}
+footer .gray-box{background: #f3f3f3; border-radius: 20px; padding: 8px 10px; display: flex; flex-wrap: wrap; margin-bottom: 10px; justify-content: space-between;}
 footer .noline{background: none; border-radius: 20px; padding: 0;}
 footer h5 span{vertical-align: middle; font-size: 28px;}
 footer a{font-size: 16px; color:#554ddc; font-weight: 700;}
