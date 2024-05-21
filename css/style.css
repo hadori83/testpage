@@ -109,7 +109,7 @@ a, a:hover {
 }
 
 .untree_co--site-section {
-  padding: 7rem 0;
+  padding: 4rem 0;
   position: relative;
   clear: both;
   width: 100%;
@@ -1835,14 +1835,14 @@ footer .form-subscribe .form-control:active, footer .form-subscribe .form-contro
 }
 
 .custom-row-02192 {
-  margin-left: -25px !important;
-  margin-right: -25px !important;
+  margin-left: -15px !important;
+  margin-right: -15px !important;
 }
 
 .custom-row-02192 > .col,
 .custom-row-02192 > [class*="col-"] {
-  padding-right: 25px !important;
-  padding-left: 25px !important;
+  padding-right: 15px !important;
+  padding-left: 15px !important;
 }
 
 .gutter-1 {
@@ -1930,6 +1930,7 @@ footer .form-subscribe .form-control:active, footer .form-subscribe .form-contro
   .room-animate .img-wrap .bg-image {
     height: 300px !important;
   }
+
 }
 
 .slide-thumb {
@@ -2065,6 +2066,18 @@ footer .form-subscribe .form-control:active, footer .form-subscribe .form-contro
   .sticky-wrapper .untree_co--site-nav{background:initial; padding: 10px;}
   .sticky-wrapper .untree_co--site-nav .untree_co--site-logo img{width: 180px }
   .sticky-wrapper .untree_co--site-nav .container{height: 60px; padding-top: 12px; }
+
+  .custom-row-02192 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+  .custom-row-02192 > .col,
+  .custom-row-02192 > [class*="col-"] {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+  .main_banner{width: 50%; margin-bottom: 0 !important;}
+  .mobile_n{display: none;}
 }
 
 .relative {
