@@ -1125,14 +1125,14 @@ a, a:hover {
 }
 .sticky-wrapper #logo{
   display: block;
-  background: url("/images/logo_w.png") no-repeat;
+  background: url("../images/logo_w.png") no-repeat;
   background-size: contain;
   width: 200px;
   height: 37.42px;
 }
 .sticky-wrapper.is-sticky #logo{
   display: block;
-  background: url("/images/logo.png") no-repeat;
+  background: url("../images/logo.png") no-repeat;
   background-size: contain;
   width: 200px;
   height: 37.42px;
