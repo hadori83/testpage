@@ -16,12 +16,14 @@
   <meta name="description" content="" />
   <meta name="keywords" content="" />
 
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500i,700|Roboto:300,400,500,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/vendor/icomoon/style.css">
     <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
     <link rel="stylesheet" href="css/vendor/aos.css">
     <link rel="stylesheet" href="css/vendor/animate.min.css">
     <link rel="stylesheet" href="css/vendor/bootstrap.css">
+    <link rel="stylesheet" href="css/vendor/jquery.fancybox.min.css">
 
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css">
@@ -29,7 +31,7 @@
     <title>은빛감정평가</title>
   </head>
   <body>
-
+    
     <div id="untree_co--overlayer"></div>
     <div class="loader">
       <div class="spinner-border text-primary" role="status">
@@ -37,6 +39,7 @@
       </div>
     </div>
 
+    
     <nav class="untree_co--site-mobile-menu">
       <div class="close-wrap d-flex">
         <a href="#" class="d-flex ml-auto js-menu-toggle">
@@ -53,23 +56,21 @@
 
     <div class="untree_co--site-wrap">
 
-      <nav class="untree_co--site-nav js-sticky-nav">
+      <nav class="untree_co--site-nav dark js-sticky-nav">
         <div class="container d-flex align-items-center">
           <div class="logo-wrap">
-            <a href="index.html" class="untree_co--site-logo"><span id="logo"></span></a>
+            <a href="index.html" class="untree_co--site-logo"><img src="./images/logo.png" / ></a>
           </div>
           <div class="site-nav-ul-wrap text-center d-none d-lg-block">
             <ul class="site-nav-ul js-clone-nav text-md-right">
-              <li class="active"><a href="index.html">홈</a></li>
+              <li><a href="index.html">홈</a></li>
               <li><a href="about.html">소개약력</a></li>
-              <li><a href="charge.html">감정평가 수수료</a></li>
+              <li class="active"><a href="charge.html">감정평가 수수료</a></li>
               <li><a href="contact.html">정식평가 의뢰</a></li>
               <li><a href="qna.html" >자주묻는 질문</a></li>
             </ul>
           </div>
           <div class="icons-wrap text-md-right">
-
-
             <!-- Mobile Toggle -->
             <a href="#" class="d-block d-lg-none burger js-menu-toggle" data-toggle="collapse" data-target="#main-navbar">
               <span></span>
@@ -78,138 +79,87 @@
         </div>
       </nav>
 
-      <div class="untree_co--site-main">
+      <main class="untree_co--site-main">
         
 
-        <div class="owl-carousel owl-hero">
-
-          <div class="untree_co--site-hero overlay h100vh" style="background: linear-gradient(to bottom, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('images/slider_1.jpg'); background-repeat: no-repeat; background-size: cover;">
-            <div class="container">
-              <div class="row align-items-center justify-content-center">
-                <div class="col-md-8">
-                  <div class="site-hero-contents text-center" data-aos="fade-up">
-                    <div class="sub-text">
-                      <p>한번 고객은 영원한 파트너!</p>
-                    </div>
-                    <h1 class="hero-heading">예상 감정평가액을 무료로 상담해 드립니다.</h1>
-                    
+        <div class="untree_co--site-hero inner-page bg-light" style="background-color: #fff;">
+          <div class="container">
+            <div class="row ">
+              <div class="col-md-12">
+                <div class="site-hero-contents" data-aos="fade-up">
+                  <h1 class="hero-heading">감정평가 수수료</h1>
+                  <div class="sub-text">
+                    <p>국토교통부 공고 제 2022-56호(2022.01.21) [감정평가법인등의 보수에 관한 기준]에 의한 기본수수료에 의해 산정</p>
+                  </div>
+                  <div>
+                    <table class="table table-striped text-center">
+                        <thead>
+                          <tr>
+                            <th scope="col">감정평가액</th>
+                            <th scope="col">수수료 요율체계</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>5천만원 이하</td>
+                            <td>200,000원</td>
+                          </tr>
+                          <tr>
+                            <td>5천만원 초과 5억원 이하</td>
+                            <td>200,000원 + 5천만원 초과액의 11/10,000</td>
+                          </tr>
+                          <tr>
+                            <td>5억원 초과 10억원 이하</td>
+                            <td>695,000 + 5억원 초과액의 9/10,000</td>
+                          </tr>
+                          <tr>
+                            <td>10억원 초과 50억원 이하</td>
+                            <td>1,145,000 + 10억원 초과액의 8/10,000</td>
+                          </tr>
+                          <tr>
+                            <td>50억원 초과 100억원 이하</td>
+                            <td>4,345,000 + 50억원 초과액의 7/10,000</td>
+                          </tr>
+                          <tr>
+                            <td>100억원 초과 500억원 이하</td>
+                            <td>7,845,000 + 100억원 초과액의 6/10,000</td>
+                          </tr>
+                          <tr>
+                            <td>500억원 초과 1,000억원 이하</td>
+                            <td>31,845,000 + 500억원 초과액의 5/10,000</td>
+                          </tr>
+                          <tr>
+                            <td>1,000억원 초과 3,000억원 이하</td>
+                            <td>56,845,000 + 1,000억원 초과액의 4/10,000</td>
+                          </tr>
+                          <tr>
+                            <td>3,000억원 초과 6,000억원 이하</td>
+                            <td>136,845,000 + 3,000억원 초과액의 3/10,000</td>
+                          </tr>
+                          <tr>
+                            <td>6,000억원 초과 1조원 이하</td>
+                            <td>226,845,000 + 6,000억원 초과액의 2/10,000</td>
+                          </tr>
+                          <tr>
+                            <td>1조원 초과</td>
+                            <td>306,845,000 + 1조원 초과액의 1/10,000</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                  </div>
+                  <div class="sub-text">
+                    <p>※상기 예상 수수료는 부동산 소재지가 서울일 경우 실비 및 VAT를 포함한 예상 총비용입니다.
+                        부동산 용도, 소재지 및 수량 등에 따라 실비가 다소 변동될 수 있습니다.
+                      </p>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
 
-          <div class="untree_co--site-hero overlay h100vh"  style="background: linear-gradient(to bottom, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('images/slider_2.jpg'); background-repeat: no-repeat; background-size: cover;">
-            <div class="container">
-              <div class="row align-items-center justify-content-center">
-                <div class="col-md-7">
-                  <div class="site-hero-contents text-center" data-aos="fade-up">
-                    <div class="sub-text">
-                      <p>한번 고객은 영원한 파트너!</p>
-                    </div>
-                    <h1 class="hero-heading">예상 감정평가액을 무료로 상담해 드립니다.</h1>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
 
-        
-
-        <div class="untree_co--site-section bg-body-darker" >
-          <div class="container">   
-            <div class="row custom-row-02192 align-items-stretch mb-3">
-              <div class="main_banner col-md-6 col-lg-3 mb-2 mt-up" >
-                <div class="media-29191 h-100 bg-point1">
-                  <h5>소개약력</h5>
-                  <p >은빛감정평가 소개입니다.</p>
-                  <p><p><a href="about.html" class="readmore reverse">바로 가기</a></p></p>
-                </div>
-              </div>
-    
-              
-              <div class="main_banner col-md-6 col-lg-3 mb-2 mt-up" >
-                <div class="media-29191 h-100 bg-point2">
-                  <h5>감정평가 수수료</h5>
-                  <p >감정평가 수수료를 볼수있습니다.</p>
-                  <p><p><a href="charge.html" class="readmore reverse">바로 가기</a></p></p>
-                </div>
-              </div>
-              
-              
-              <div class="main_banner col-md-6 col-lg-3 mb-2 mt-up">
-                <div class="media-29191 h-100 bg-point3">
-                  <h5>정식평가 의뢰</h5>
-                  <p >정식 감정평가 의뢰를 접수합니다.</p>
-                  <p><p><a href="contact.html" class="readmore reverse">바로 가기</a></p></p>
-                </div>
-              </div>
-
-              <div class="main_banner col-md-6 col-lg-3 mb-2 mt-up">
-                <div class="media-29191 h-100 bg-point4">
-                  <h5>자주묻는 질문</h5>
-                  <p >자주묻는 질문들을 모았습니다.</p>
-                  <p><p><a href="qna.html" class="readmore reverse">바로 가기</a></p></p>
-                </div>
-              </div>
-            </div>
-            <!-- <div class="row custom-row-02192 align-items-stretch">
-              <div class="col-md-8 col-lg-7 mb-5" data-aos="fade-up" data-aos-delay="200">
-                <div class="media-29191 text-center h-100">
-                  <div class="media-29191-icon">
-                    <span class="material-symbols-outlined">
-                      account_box
-                      </span>
-                  </div>
-                  <h5>소개</h5>
-                  <p class="text-md-left">감정평가업계의 리더로서 쉽고 빠른
-                    상담을 통해 고객님의 권익 및 재산권 보호에
-                    최선을 다하겠습니다.<br/><br/>
-                    외뢰인께서감정평가 서비스에 쉽게 접근하여
-                    다양한 평가목적과 평가대상에 대하여 전문적으로
-                    상담받고 감정평가 절차를 안내받을 수 있도록 하였습니다.<br/><br/>
-                    신청내용은 비공개로 처리되며 전문 지식과 풍부한 경험을
-                    바탕으로 신속하게 검토 한 후 의뢰인의 연락처로 전화상담이
-                    진행될 수 있도록 하겠습니다.
-                    </p>
-                  
-                </div>
-              </div>
-              
-              <div class="col-md-6 col-lg-5 mb-5" data-aos="fade-up" data-aos-delay="200">
-                <div class="media-29191 text-center h-100">
-                  <div class="media-29191-icon">
-                    <span class="material-symbols-outlined">
-                      list_alt
-                      </span>
-                  </div>
-                  <h5>약력</h5>
-                  <p>(현)한국감정평가사협회 감정평가심사 위원회 의원<br/>
-                    (현)경북 상가임대차분쟁 조정위원회 전문위원<br/>
-                    (현)대구지방법원 감정인<br/>
-                    (전)한국도로공사잔여지심의위원<br/>
-                    (전)영주코리아 협력 감정평가사 단독계약 (2016년~2023년)<br/>
-                    (전)은빛감정평가법인 의원
-                    </p>
-                  
-                </div>
-              </div>
-
-              
-
-            </div> -->
-          </div>
-        </div>
-        
-
-        
-        
-
-        
-
-    
-        <div class="untree_co--site-section bg-body-darker">
+        <div class="untree_co--site-section py-5 bg-body-darker">
           <div class="container">
             <div class="row">
               <div class="col-md-8 col-lg-8 text-md-left">
@@ -248,8 +198,7 @@
           </div>
         </div>
 
-
-      </div>
+      </main>
       <footer class="untree_co--site-footer">
 
         <div class="container">
@@ -274,7 +223,6 @@
         
       </footer>
     </div>
-
     <!-- Search -->
     <div class="search-wrap">
       <a href="#" class="close-search js-search-toggle">
@@ -299,12 +247,14 @@
     
     <script src="js/vendor/jarallax.min.js"></script>
     <script src="js/vendor/jarallax-element.min.js"></script>
-    <script sr c="js/vendor/ofi.min.js"></script>
+    <script src="js/vendor/ofi.min.js"></script>
 
     <script src="js/vendor/aos.js"></script>
 
     <script src="js/vendor/jquery.lettering.js"></script>
     <script src="js/vendor/jquery.sticky.js"></script>
+
+    <script src="js/vendor/jquery.fancybox.min.js"></script>
 
     <script src="js/vendor/TweenMax.min.js"></script>
     <script src="js/vendor/ScrollMagic.min.js"></script>
